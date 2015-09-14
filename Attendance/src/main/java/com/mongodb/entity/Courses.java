@@ -18,6 +18,7 @@ public class Courses
 	private String courseName;
 	private String courseCode;
 	private String instructor;
+	private int year;
 	private ArrayList<Integer> classDays = new ArrayList<Integer>();
 	private ArrayList<Date> attendanceDates = new ArrayList<Date>(); //contains the dates of classes;
 	
@@ -33,6 +34,14 @@ public class Courses
 	public String getID()
 	{
 		return id;
+	}
+	public void setYear(int year)
+	{
+		this.year = year;
+	}	
+	public int getYear()
+	{
+		return year;
 	}
 	public void setCourseName(String CourseName)
 	{
