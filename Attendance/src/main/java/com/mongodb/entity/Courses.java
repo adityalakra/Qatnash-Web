@@ -15,9 +15,10 @@ public class Courses
 	@Id
 	private String id;
 	
-	private String courseName;
+	private String name;
 	private String courseCode;
 	private String instructor;
+	private ArrayList<Integer> yearArr = new ArrayList<Integer>();
 	private ArrayList<Integer> classDays = new ArrayList<Integer>();
 	private ArrayList<Date> attendanceDates = new ArrayList<Date>(); //contains the dates of classes;
 	
@@ -34,13 +35,13 @@ public class Courses
 	{
 		return id;
 	}
-	public void setCourseName(String CourseName)
+	public void setName(String Name)
 	{
-		this.courseName = CourseName;
+		this.name = Name;
 	}
-	public String getCourseName()
+	public String getName()
 	{
-		return courseName;
+		return name;
 	}
 	public void setCourseCode(String code)
 	{
@@ -65,6 +66,14 @@ public class Courses
 	public ArrayList<Integer> getDay()
 	{
 		return classDays;
+	}
+	public void setYearArr(ArrayList<Integer> yearArr)
+	{
+		this.yearArr = yearArr;
+	}
+	public ArrayList<Integer> getYearArr()
+	{
+		return yearArr;
 	}
 	
 	public ArrayList<Date> getClassDates()
