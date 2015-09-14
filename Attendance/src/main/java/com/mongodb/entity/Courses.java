@@ -18,6 +18,7 @@ public class Courses
 	private String courseName;
 	private String courseCode;
 	private String instructor;
+	private ArrayList<Integer> yearArr = new ArrayList<Integer>();
 	private ArrayList<Integer> classDays = new ArrayList<Integer>();
 	private ArrayList<Date> attendanceDates = new ArrayList<Date>(); //contains the dates of classes;
 	
